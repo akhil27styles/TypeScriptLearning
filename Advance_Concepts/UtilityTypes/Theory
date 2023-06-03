@@ -1,0 +1,18 @@
+Utility types in TypeScript are pre-defined generic types provided by the language that help in manipulating and transforming existing types in various ways.
+TypeScript provides several utility types out of the box. Here are some commonly used utility types:
+
+Partial<Type>: Constructs a type with all properties of Type set as optional.
+Required<Type>: Constructs a type with all properties of Type set as required.
+Readonly<Type>: Constructs a type with all properties of Type set as readonly.
+Record<Keys, Type>: Constructs a type with a set of properties defined by Keys and their corresponding value type defined by Type.
+Pick<Type, Keys>: Constructs a type by picking specific properties Keys from Type.
+Omit<Type, Keys>: Constructs a type by omitting specific properties Keys from Type.
+Exclude<Type, Union>: Constructs a type by excluding types from Type that are assignable to Union.
+Extract<Type, Union>: Constructs a type by extracting types from Type that are assignable to Union.
+NonNullable<Type>: Constructs a type by removing null and undefined from Type.
+ReturnType<Type>: Extracts the return type of a function type Type.
+Parameters<Type>: Extracts the parameter types of a function type Type.
+ConstructorParameters<Type>: Extracts the parameter types of a constructor function type Type.
+ThisParameterType<Type>: Extracts the type of this parameter in a function type Type.
+RequiredKeys<Type>: Extracts the keys from Type that are required.
+OptionalKeys<Type>: Extracts the keys from Type that are optional.
